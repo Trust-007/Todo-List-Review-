@@ -45,7 +45,6 @@ export const edit = (e) => {
 
 export const remove = (e) => {
   const itemId = e.target.parentElement.id;
-  //parent.id = parent.firstChild.children[1].id
   
   if (hasFocused === true && itemId !== '') {
     const taskList = JSON.parse(localStorage.getItem('todo'));
@@ -67,7 +66,6 @@ export const remove = (e) => {
   }
   hasFocused = false;
 }
-
 
 // update Edit in localStorage
 
